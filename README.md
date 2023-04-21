@@ -27,7 +27,7 @@ Here is the code used to perform the analysis of the paper. Inside the folders y
 (organism_id:10090) AND (reviewed:true) AND (ft_topo_dom:cytoplasmic) #mouse
 `
 
-#Download data GFF from Uniprot
+#Download data GFF from UniProt
 
 #### Filter to obtain only Cytoplasmic domains
 
@@ -147,7 +147,7 @@ awk -F "\t" '{print $1"["$4"-"$5"]"}' extracellular_filtered.gff > extracellular
 
 #Download fasta with these coords with "Retrieve/ID mapping", from "UniProtKB AC/ID" to "UniProtKB", format: FASTA (saurce list)
 
-#### Run Deeptfactor
+#### Run DeepTFactor
 
 `
 conda activate deeptfactor
@@ -249,14 +249,14 @@ awk '{print $1}' extracellular_true.csv | cut -c 4- | cut -f1 -d"|" > uniprot_na
 grep "Lumenal" lumenal.gff > lumenal_filtered.gff
 `
 
-#### AWK to adapt to Uniprot format
+#### AWK to adapt to UniProt format
 
 `
 awk -F "\t" '{print $1"["$4"-"$5"]"}' lumenal_filtered.gff > lumenal_filtered_IDs.csv
 `
 
 #Download fasta with these coords with "Retrieve/ID mapping", from "UniProtKB AC/ID" to "UniProtKB", format: FASTA (saurce list)
-#### Run Deeptfactor
+#### Run DeepTFactor
 
 `
 conda activate deeptfactor
