@@ -2,9 +2,7 @@
 
 Here is the code used to perform the analysis of the paper. Inside the folders you can find the _awk_ files to obtain the proper transmembrane domain. Also, _tf_running_captum.py_ is the python modify version to obtain Captum interpretation.
 
-![Graphical Abstract](https://github.com/Rafaelsoler13/MTF_prediction/blob/main/Figure_1.png)
-
-<img src="https://github.com/Rafaelsoler13/MTF_prediction/blob/main/Figure_1.png" width="48">
+<img src="https://github.com/Rafaelsoler13/MTF_prediction/blob/main/Figure_1.png" width="500">
 
 ### UniProtKB 2022_05 Version Used
 
