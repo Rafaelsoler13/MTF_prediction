@@ -4,6 +4,9 @@ authors:
   - family-names: Soler
     given-names: Rafael
     orcid: https://orcid.org/0000-0003-1245-5734
+  - family-names: Víctor
+    given-names: Borrell
+    orcid: "https://orcid.org/0000-0002-7833-3978"
 title: "Prediction of novel mammalian Membrane Transcription Factors using deep learning"
 date-released: 2023-04-21
 url: "https://github.com/Rafaelsoler13/MTF_prediction"
