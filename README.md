@@ -357,9 +357,7 @@ python tf_running_captum.py -i ATF6A.fasta -g cuda -o ./results_captum
 
 # Citation
 
-Please be advised that if you choose to utilize this software for any academic publication or other purposes, it is strongly recommended that you provide appropriate attribution by citing the following paper:
-
-- ....
+Please be advised that if you choose to utilize this software for any academic publication or other purposes, it is strongly recommended that you provide appropriate attribution.
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
