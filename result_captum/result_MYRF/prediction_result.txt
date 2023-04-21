@@ -1,0 +1,5 @@
+sequence_ID	prediction	score
+sp|Q9Y2G1|1-349|547-768	False	0.0603
+sp|Q9Y2G1|1-100|300-768	False	0.3917
+sp|Q9Y2G1|1-547	True	0.6846
+sp|Q9Y2G1|MYRF_HUMAN|1-768OS=HomosapiensOX=9606GN=MYRFPE=1SV=3	True	0.7414

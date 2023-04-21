@@ -1,0 +1,5 @@
+sequence_ID	prediction	score
+sp|P17861|XBP1_HUMAN|1-185OS=HomosapiensOX=9606GN=XBP1PE=1SV=2	True	0.9760
+sp|P17861|1-70|133-185	False	0.0133
+sp|P17861|50-185	True	0.9686
+sp|P17861|1-135	True	0.9461

@@ -1,0 +1,2 @@
+sequence_ID	prediction	score
+sp|Q9DCW2|PLS2_MOUSE	True	0.9057

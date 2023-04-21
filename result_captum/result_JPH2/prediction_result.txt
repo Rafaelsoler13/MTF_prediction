@@ -1,0 +1,3 @@
+sequence_ID	prediction	score
+sp|Q9BR39|JPH2_HUMAN	True	0.9741
+sp|Q9ET78|JPH2_MOUSE	True	0.9619

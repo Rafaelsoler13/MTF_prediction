@@ -1,0 +1,2 @@
+sequence_ID	prediction	score
+sp|P36956|SRBP1_HUMAN|1-487OS=HomosapiensOX=9606GN=SREBF1PE=1SV=2	True	0.9983

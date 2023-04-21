@@ -1,0 +1,5 @@
+sequence_ID	prediction	score
+sp|P18850|1-377	True	0.9984
+sp|P18850|1-306|369-377	False	0.1759
+sp|P18850|150-377	True	0.9844
+sp|P18850|1-369	True	0.9985
