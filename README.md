@@ -1,6 +1,6 @@
 # MTF_prediction
 
-Here is the code used to perform the analysis of the paper. Inside the folders you can find the awk files to obtain the proper transmembrane domain. Also, _tf_running_captum.py_ is the python modify version to obtain Captum interpretation.
+Here is the code used to perform the analysis of the paper. Inside the folders you can find the _awk_ files to obtain the proper transmembrane domain. Also, _tf_running_captum.py_ is the python modify version to obtain Captum interpretation.
 
 ### UniProtKB 2022_05 Version Used
 
@@ -191,6 +191,7 @@ grep "True" prediction_result.txt | sort -rn -k3 > extracellular_true.csv
 `
 awk '{print $1}' extracellular_true.csv | cut -c 4- | cut -f1 -d"|" > uniprot_names.csv
 `
+
 #Manually eliminate the duplicates keeping the highest score
 
 
@@ -231,6 +232,7 @@ awk '{print $1}' extracellular_true.csv | cut -c 4- | cut -f1 -d"|" > uniprot_na
 # FOR LUMENAL
 
 #### Filter search from UniProt
+
 `
 (organism_id:9606) AND (reviewed:true) AND (ft_topo_dom:lumenal) #human
 `
@@ -280,26 +282,28 @@ awk '{print $1}' lumenal_true.csv | cut -c 4- | cut -f1 -d"|" > uniprot_names.cs
 
 ### Same but substract half of the TMD
 
-
+`
 awk -f half_lumenal.awk lumenal.gff > lumenal_filtered.gff
+`
 
-
-
+`
 awk -F "\t" '{print $1"["$4"-"$5"]"}' lumenal_filtered.gff > lumenal_filtered_IDs.csv
+`
 
-
-
+`
 python tf_running.py -i ~/lumenal.fasta -g cuda -o ~/result
+`
 
-
-
+`
 grep "True" prediction_result.txt | sort -rn -k3 > lumenal_true.csv 
+`
 
 
-
-
+`
 awk '{print $1}' lumenal_true.csv | cut -c 4- | cut -f1 -d"|" > uniprot_names.csv
+`
 
+-------------
 
 ### Same but substract full TMD
 
@@ -327,6 +331,7 @@ awk '{print $1}' lumenal_true.csv | cut -c 4- | cut -f1 -d"|" > uniprot_names.cs
 
 **#Domains greater than 1000 amino acids were not analyzed due to the limitation of the tool.**
 
+-------------
 -------------
 
 #### Check errors (Proteins with "U" aas)
