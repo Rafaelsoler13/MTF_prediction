@@ -359,6 +359,8 @@ python tf_running_captum.py -i ATF6A.fasta -g cuda -o ./results_captum
 
 Please be advised that if you choose to utilize this software for any academic publication or other purposes, it is strongly recommended that you provide appropriate attribution.
 
+[![DOI](https://zenodo.org/badge/523395975.svg)](https://zenodo.org/badge/latestdoi/523395975)
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
